@@ -1,0 +1,30 @@
+thread count = 5
+it will open 5 browsers
+
+----------------------------------------------------
+
+<test>  define test structure and organize the test 
+@test   takes as test case
+
+----------------------------------------------------
+
+skip test based on condition
+
+SkipException
+
+public void skip(){
+if(condition not satisfied) 
+throw new SkipException("Skipping based on condition")
+//test logic
+}
+
+----------------------------------------------------
+
+dependsOnGroups
+
+if u have same group name in 2 diff files which is not inherited 
+but u have depends on group in one file 
+the methods containing that group name will run from all the files
+if that class name is included within test tag in xml
+
+
